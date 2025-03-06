@@ -1,5 +1,5 @@
 # Individuell Inlämningsuppgift – OOP, Arv/Komposition & Enklare Algoritmer
-
+1
 **Översikt:**  
 Du får ett färdigt API-projekt som grund, där tre endpoints finns klara för hantering av bonsaiträd. Din uppgift är att skapa ett klassbibliotek och integrera detta med API:t genom att:
 
