@@ -5,6 +5,7 @@ public class Bonsai : Plant
     public string Species { get; set; } = string.Empty;
     public int AgeYears { get; set; }
     public BonsaiStyle Style { get; set; }
+    public DateTime LastPruned{get; set;}
 
     public override void Water()
     {

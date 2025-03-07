@@ -10,8 +10,8 @@ public class GetAllBonsais : IEndpoint
     public record Response(
         int Id,
         string Name,
-        DateTime LastWatered,
-        DateTime LastPruned
+        DateTime LastWatered
+
     );
 
     //Logic
@@ -21,8 +21,7 @@ public class GetAllBonsais : IEndpoint
             .Select(item => new Response(
                 Id: item.Id,
                 Name: item.Name,
-                LastWatered: item.LastWatered,
-                LastPruned: item.LastPruned
+                LastWatered: item.LastWatered
             )).ToList();
     }
 }

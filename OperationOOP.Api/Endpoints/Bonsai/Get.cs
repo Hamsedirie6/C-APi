@@ -13,7 +13,6 @@ public class GetBonsai : IEndpoint
         string Species,
         int AgeYears,
         DateTime LastWatered,
-        DateTime LastPruned,
         BonsaiStyle Style,
         CareLevel CareLevel
     );
@@ -29,7 +28,6 @@ public class GetBonsai : IEndpoint
             Species: bonsai.Species,
             AgeYears: bonsai.AgeYears,
             LastWatered: bonsai.LastWatered,
-            LastPruned: bonsai.LastPruned,
             Style: bonsai.Style,
             CareLevel: bonsai.CareLevel
             );

@@ -2,7 +2,7 @@
 
 namespace OperationOOP.Core.Models
 {
-    public class OutdoorPLant : Plant
+    public class OutdoorPlant : Plant
     {
         public string ClimateZone {get; set;} = string.Empty;
 

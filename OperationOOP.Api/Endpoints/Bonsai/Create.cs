@@ -10,7 +10,6 @@ public class CreateBonsai : IEndpoint
         string Species,
         int AgeYears,
         DateTime LastWatered,
-        DateTime LastPruned,
         BonsaiStyle Style,
         CareLevel CareLevel
         );
@@ -27,7 +26,6 @@ public class CreateBonsai : IEndpoint
         bonsai.Species = request.Species;
         bonsai.AgeYears = request.AgeYears;
         bonsai.LastWatered = request.LastWatered;
-        bonsai.LastPruned = request.LastPruned;
         bonsai.Style = request.Style;
         bonsai.CareLevel = request.CareLevel;
 
