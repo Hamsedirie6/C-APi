@@ -11,6 +11,10 @@ public class Bonsai : Plant
     {
        LastWatered = DateTime.Now;
     }
+    public Bonsai()
+    {
+        CareLevel = CareLevel.Hard;
+    }
 
 }
 

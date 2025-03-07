@@ -10,5 +10,10 @@ namespace OperationOOP.Core.Models
         {
             LastWatered = DateTime.Now;
         }
+
+        public OutdoorPlant()
+        {
+            CareLevel = CareLevel.Easy;
+        }
     }
 }

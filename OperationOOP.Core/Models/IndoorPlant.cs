@@ -11,6 +11,10 @@ namespace OperationOOP.Core.Models
            
            LastWatered = DateTime.Now;
         }
+        public IndoorPlant()
+        {
+            CareLevel = CareLevel.Medium;
+        }
     }
 
     
