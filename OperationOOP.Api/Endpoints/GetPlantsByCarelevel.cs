@@ -11,8 +11,7 @@ namespace OperationOOP.Api.Endpoints
         public record Response(int id, string Name, DateTime LastWatered, CareLevel CareLevel);
         public static List<Response> Handle (CareLevel careLevel, IDatabase db)
         {
-             var filteredPlants = db.Plants
-             .Where(p => p.CareLevel == careLevel)
+             var filteredPlants = PlantFilter.GetPlantsByCareLevel(db.Plants, careLevel)
              .Select(p => new Response(
                 p.Id,
                 p.Name,
