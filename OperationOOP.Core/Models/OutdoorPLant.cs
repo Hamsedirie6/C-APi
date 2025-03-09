@@ -2,16 +2,16 @@
 
 namespace OperationOOP.Core.Models
 {
-    public class OutdoorPlant : Plant
+    public class OutdoorPlant : Plant // Ärver från Plant
     {
         public string ClimateZone {get; set;} = string.Empty;
 
-        public override void Water()
+        public override void Water() // Uppdaterar senaste vattningstidpunkt
         {
             LastWatered = DateTime.Now;
         }
 
-        public OutdoorPlant()
+        public OutdoorPlant() //Konstruktor som sätter vårdninvån
         {
             CareLevel = CareLevel.Easy;
         }

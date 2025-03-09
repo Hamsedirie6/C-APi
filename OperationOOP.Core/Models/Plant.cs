@@ -2,7 +2,7 @@
 
 namespace OperationOOP.Core.Models
 {
-    public enum CareLevel
+    public enum CareLevel //Enum som definierar olika vårdnivåer
     {
         Easy,
         Medium,

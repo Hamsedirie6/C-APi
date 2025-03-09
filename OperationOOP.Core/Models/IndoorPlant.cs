@@ -2,16 +2,16 @@
 
 namespace OperationOOP.Core.Models
 {
-    public class IndoorPlant : Plant
+    public class IndoorPlant : Plant // Ärver från plant
     {
         public string Location {get; set;} = string.Empty;
 
-        public override void Water()
+        public override void Water() // Uppdaterar senaste vattningstidpunkt
         {
            
            LastWatered = DateTime.Now;
         }
-        public IndoorPlant()
+        public IndoorPlant() //Konstruktor som sätter vårdninvån
         {
             CareLevel = CareLevel.Medium;
         }

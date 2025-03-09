@@ -1,5 +1,5 @@
 namespace OperationOOP.Core.Models;
-public class Bonsai : Plant
+public class Bonsai : Plant //Ärver från Plant
 {
     
     public string Species { get; set; } = string.Empty;
@@ -7,11 +7,11 @@ public class Bonsai : Plant
     public BonsaiStyle Style { get; set; }
     public DateTime LastPruned{get; set;}
 
-    public override void Water()
+    public override void Water()// Uppdaterar senaste vattningstidpunkt
     {
        LastWatered = DateTime.Now;
     }
-    public Bonsai()
+    public Bonsai() //Konstruktor som sätter vårdninvån
     {
         CareLevel = CareLevel.Hard;
     }

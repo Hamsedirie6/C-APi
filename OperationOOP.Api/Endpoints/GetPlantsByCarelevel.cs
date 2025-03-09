@@ -2,6 +2,7 @@
 
 namespace OperationOOP.Api.Endpoints
 {
+    //Endpoint för att hämta växter baserat på deras vårdnivå
     public class GetPlantsByCarelevel : IEndpoint
     {
         public static void MapEndpoint(IEndpointRouteBuilder app) => app

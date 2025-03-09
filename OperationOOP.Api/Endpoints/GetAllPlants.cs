@@ -3,7 +3,7 @@ using OperationOOP.Core.Data;
 
 namespace OperationOOP.Api.Endpoints
 {
-    public class GetAllPlants : IEndpoint
+    public class GetAllPlants : IEndpoint // Endpoint för att hämta alla växter
     {
         public static void MapEndpoint(IEndpointRouteBuilder app) => app
         .MapGet("/plants", Handle)
